@@ -35,4 +35,23 @@ contract lec21 {
             return outcome;
         }
     }
+
+        function advancedIsIt(uint256 _number) public returns(string memory) {
+        if(_number == 1) {
+            outcome = " it is 1";
+            return outcome;
+        }
+        else if(_number == 3) {
+            outcome = "it is 3";
+            return outcome;
+        }
+        else if(_number == 5) {
+            outcome = "it is 5";
+            return outcome;
+        }
+        else { // 이 경우에는 else가 없어도 작동함 
+            outcome = "not 1/3/5";
+            return outcome;
+        }
+    }
 }
