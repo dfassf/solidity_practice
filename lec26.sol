@@ -11,6 +11,15 @@ contract lec26{
     assert가 에러 발생시키면 Panic(uint256)이라는 타입의 에러 발생
  */
     function assertNow () public pure{
+        /*
+        call to lec26.assertNow errored: VM error: revert.
+
+        revert
+            The transaction has been reverted to the initial state.
+        Note: The called function should be payable if you send value and the value you send should be less than your current balance.
+        Debug the transaction to get more information.
+        ** panic은 어디에?? **
+*/
         assert(false);
     }
     
