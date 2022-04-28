@@ -33,5 +33,4 @@ contract lec26{
         require(_age>19, "no cig allowed");
         return "payment proceeded";
     }
-
 }
