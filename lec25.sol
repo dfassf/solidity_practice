@@ -27,12 +27,15 @@ contract lec25{
 
     function onlyAdults(uint256 _age) public pure returns(string memory) {
         if(_age < 19) {
+            // 가스비용 다 들어감
             revert("no cig allowed");
         }
         return "payment proceeded";
     }
 
     function onlyAdults2(uint256 _age) public pure returns(string memory) {
+        // 가스비용이 일부 환불됨.
+        // require(조건, false일 시) like Excel
         require(_age>19, "no cig allowed");
         return "payment proceeded";
     }
