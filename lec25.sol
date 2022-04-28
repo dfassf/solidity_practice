@@ -25,5 +25,17 @@ contract lec25{
         require(false, "error");
     }
 
+    function onlyAdults(uint256 _age) public pure returns(string memory) {
+        if(_age < 19) {
+            revert("no cig allowed");
+        }
+        return "payment proceeded";
+    }
+
+    function onlyAdults2(uint256 _age) public pure returns(string memory) {
+        require(_age>19, "no cig allowed");
+        return "payment proceeded";
+    }
+
 }
 
